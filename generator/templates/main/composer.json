@@ -1,5 +1,5 @@
 {
-  "name": "lewebsimple/<%= _.folderName %>",
+  "name": "lewebsimple/<%= context.outFolder %>",
   "description": "WordPress project",
   "version": "0.1.5",
   "type": "project",
