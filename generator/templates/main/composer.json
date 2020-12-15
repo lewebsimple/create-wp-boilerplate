@@ -17,10 +17,18 @@
   "config": {
       "sort-packages": true
   },
+  "extra": {
+    "installer-paths": {
+      "wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+      "wp-content/themes/{$name}/": ["type:wordpress-theme"]
+    }
+  },
   "scripts": {
-      "post-install-cmd": "wp core download --force --skip-content",
+      "post-update-cmd": "wp core download --force --skip-content",
       "post-create-project-cmd": "wp core download --force --skip-content"
   },
   "require": {
+    "composer/installers": "*"
   }
 }
