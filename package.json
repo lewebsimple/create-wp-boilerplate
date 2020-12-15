@@ -1,0 +1,13 @@
+{
+  "name": "create-wp-boilerplate",
+  "version": "0.1.0",
+  "license": "MIT",
+  "bin": {
+    "create-wp-boilerplate": "cli.js"
+  },
+  "dependencies": {
+    "cac": "^6.7.1",
+    "chalk": "^4.1.0",
+    "sao": "^1.7.1"
+  }
+}
